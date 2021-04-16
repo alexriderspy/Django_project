@@ -17,3 +17,18 @@ and then do python manage.py migrate
 now we are good to go
 to see what are migrations do python manage.py sqlmigrate music 0001 (or whatever name we see)
 and it shows exactly what we created
+
+# Working with sql database
+write in prompt python manage.py shell
+a=Album(genre="",..)
+a.save()
+a.pk
+1
+b=Album()
+b.genre=""..
+b.save()
+b.pk
+2
+Album.objects.all()
+we can change any info too
+b.genre=""
