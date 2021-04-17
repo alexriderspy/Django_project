@@ -32,3 +32,13 @@ b.pk
 Album.objects.all()
 we can change any info too
 b.genre=""
+Album.objects.filter(id=1)
+Album.objects.filter(artist__startswith='Taylor')
+
+# admin interface
+python manage.py createsuperuser
+next do admin.site.register(Album)  //for the class name
+# improving
+Now we will add more views(Aka functions) because each url is connected to a view
+We now want our home page to have just the list of albums with the name of their artists and then when we click on them we will be directed to a the details of each album
+
